@@ -1,39 +1,49 @@
-<!-- Agregar estos en el <head> de index.html -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- Contenedor para el mapa -->
-<div id="map" style="height: 400px;"></div>
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyecto Final POO</title>
   <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
 
   <!-- Barra de navegación -->
   <nav>
+    <div class="logo">
+      <h1>Proyecto Final</h1>
+    </div>
     <ul>
       <li><a href="#acerca">Acerca de</a></li>
       <li><a href="#descripcion">Descripción</a></li>
       <li><a href="#autor">Autor</a></li>
+      <li><a href="#map">Mapa</a></li> <!-- Nuevo enlace para el mapa -->
     </ul>
   </nav>
 
+  <!-- Mapa -->
+  <div id="map"></div>
+
   <!-- Secciones -->
- <section id="descripcion">
-    <h2>Descripción</h2>
-    <p>En el barrio villa maria en suba se presenta congestion vehicular para salir a la avenida ciudad de cali ya que solo hay 3 salidas.
-         El presente proyecto analisa las causas de la congestion vehicular y las posilbe soluciones para solucionar el problema
+
+
+  <section id="descripcion">
+    <div class="section-container">
+      <h2>Descripción</h2>
+      <p>En el barrio villa maria en suba se presenta congestion vehicular para salir a la avenida ciudad de cali ya que solo hay 3 salidas. El presente proyecto analisa las causas de la congestion vehicular y las posilbe soluciones para solucionar el problema.</p>
+    </div>
   </section>
 
   <section id="autor">
-    <h2>Autor</h2>
-    <p>Jaider Alexander Patiño - GitHub: <a href="https://github.com/Jaider82" target="_blank">Jaider82</a></p>
+    <div class="section-container">
+      <h2>Autor</h2>
+      <p>Jaider Beltran Cely - GitHub: <a href="https://github.com/Jaider82" target="_blank">Jaider82</a></p>
+    </div>
   </section>
 
   <script src="programa.js"></script>
 </body>
 </html>
+

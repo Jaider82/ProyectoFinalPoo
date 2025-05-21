@@ -1,35 +1,100 @@
-/* estilos.css */
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Barra de navegación */
 nav {
-  background-color: #333;
+  background-color: #007BFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav .logo h1 {
+  color: white;
+  font-size: 24px;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #0056b3;
 }
 
+nav ul li a:active {
+  background-color: #004080;
+}
+
+/* Estilo para el contenedor del mapa */
+#map {
+  width: 100%;
+  height: 400px;
+  margin-top: 70px; /* Para no tapar la barra de navegación */
+}
+
+/* Estilo para las secciones */
 section {
+  padding: 40px 20px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-container {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
